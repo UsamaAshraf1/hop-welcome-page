@@ -1,111 +1,116 @@
 import Image from "next/image";
-
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.js</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-full sm:before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full sm:after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
+    <div className="relative justify-center items-center mt-16 ms-4 md:mt-0 md:ms-0">
+      <Image
+        src="/bg2.png"
+        alt=""
+        layout="responsive"
+        quality={75}
+        objectFit="cover"
+        width={100}
+        height={100}
+        className="absolute z-50 object-cover w-[100vw] h-[100vh] hidden lg:block"
+      />
+      <div className="flex relative ms-16 lg:ms-56 ">
         <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
+          src="/img1.png"
+          alt=""
+          width={200}
+          height={220}
+          className="absolute top-64 -left-5 z-10 w-[200px] h-[170px]"
+        />
+
+        <Image
+          src="/img2.png"
+          alt=""
+          width={200}
+          height={220}
+          className="absolute top-24 w-[250px] h-[200px]"
+        />
+
+        <Image
+          src="/img3.png"
+          alt=""
+          width={150}
+          height={220}
+          className="absolute left-36 w-[150px] h-[280px]"
+        />
+
+        <Image
+          src="/img4.png"
+          alt=""
+          width={170}
+          height={220}
+          className="absolute left-64 z-10 w-[170px] h-[250px]"
+        />
+
+        <Image
+          src="/img5.png"
+          alt=""
+          width={300}
+          height={220}
+          className="absolute left-[23rem] -top-5 w-[300px] h-[300px]"
+        />
+
+        <Image
+          src="/img6.png"
+          alt=""
+          width={270}
+          height={220}
+          className="absolute left-[39rem] top-20 w-[290px] h-[300px]"
+        />
+
+        <Image
+          src="/img7.png"
+          alt=""
+          width={200}
+          height={220}
+          className="absolute left-[45rem] top-64 w-[150px] h-[220px]"
         />
       </div>
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800 hover:dark:bg-opacity-30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50 text-balance`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
+      <div className="relative">
+        <Image
+          src="/img8.png"
+          alt=""
+          width={700}
+          height={520}
+          className="absolute top-[250px] left-28 lg:left-72  md:w-[700px] h-[620px]"
+        />
       </div>
-    </main>
+
+      <div className="relative">
+        <Image
+          src="/img9.png"
+          alt=""
+          width={700}
+          height={220}
+          className="absolute top-[235px] left-32 lg:left-72 z-40 w-[700px] h-[350px]"
+        />
+        <Image
+          src="/img10.png"
+          alt=""
+          width={320}
+          height={350}
+          className="absolute top-[42rem] left-[20rem] lg:left-[30rem] z-40 w-[320px] h-[180px]"
+        />
+      </div>
+
+      {/* SVG */}
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 207 376"
+        fill="none"
+        className="absolute top-[10rem] left-[30rem] lg:left-[45rem] w-[95px] h-[376px]"
+      >
+        <path
+          fillRule="evenodd"
+          clipRule="evenodd"
+          d="M105 0L207 30C207 30 173.4 179.67 173 188C172.6 196.33 175.4 293.67 177 306C178.6 318.33 185 376 185 376C185 376 19.4 347.67 13 340C6.60004 332.33 -4.59996 265.67 3.00004 238C10.6 210.33 27.4 149.67 37 128C46.6 106.33 91 28 91 28L105 0Z"
+          fill="black"
+        />
+      </svg>
+    </div>
   );
 }
